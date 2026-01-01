@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyKuttan - Food and Health Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HealthyKuttan</h1>
+        <p>Your simple food and health planner</p>
+
+        <div class="planner">
+            <h2>Add Food Item</h2>
+            <form id="food-form">
+                <input type="text" id="food-name" placeholder="Food Name" required>
+                <input type="number" id="calories" placeholder="Calories" required>
+                <input type="number" id="protein" placeholder="Protein (g)" required>
+                <input type="number" id="carbs" placeholder="Carbs (g)" required>
+                <input type="number" id="fat" placeholder="Fat (g)" required>
+                <button type="submit">Add Food</button>
+            </form>
+
+            <h2>Today's Food Plan</h2>
+            <ul id="food-list"></ul>
+
+            <h2>Total Nutrition</h2>
+            <div id="total-nutrition">
+                <p>Total Calories: <span id="total-calories">0</span></p>
+                <p>Total Protein: <span id="total-protein">0</span>g</p>
+                <p>Total Carbs: <span id="total-carbs">0</span>g</p>
+                <p>Total Fat: <span id="total-fat">0</span>g</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
